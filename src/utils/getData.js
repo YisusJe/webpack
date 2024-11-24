@@ -1,9 +1,9 @@
 const API = 'https://randomuser.me/api/';
 
 const getData = async (id) => {
-  const apiURl = id ? `${API}${id}` : API;
+  const apiURL = id ? `${API}${id}` : API;
   try {
-    const response = await fetch(apiURl);
+    const response = await fetch(apiURL);
     const data = await response.json();
     return data.results[0];
   } catch (error) {
